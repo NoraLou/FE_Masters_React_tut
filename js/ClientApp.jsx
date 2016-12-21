@@ -1,20 +1,14 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
-var MyTitle = require('./MyTitle')
-var div = React.DOM.div
+const React = require('react')
+const ReactDOM = require('react-dom')
 
-
-//stateless component
-//why we remove the render function
-
-
-var MyFirstComponent = () => (
-	<div>
-		<MyTitle title="Hello stateless component" color="rebeccapurple"/>
-		<MyTitle title="returns the same thing everytime" color="rebeccapurple"/>
-		<MyTitle title="your new boyfriend" color="rebeccapurple"/>
+const App = () => (
+	<div className='app-container'>
+		<div className='home-info'>
+			<h1 className='title'>svideo</h1>
+			<button className='browse-all'> or Browse All</button>
+		</div>
 	</div>
 )
 	
 
-ReactDOM.render(<MyFirstComponent/>, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
